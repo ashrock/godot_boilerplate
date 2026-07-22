@@ -1,0 +1,70 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fireGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#FF8C00;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#FF4500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innerFlame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFE0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect x="16" y="16" width="480" height="480" rx="60" ry="60" fill="#2C1810" stroke="#1A0F0A" stroke-width="8"/>
+
+  <!-- Main flame shape -->
+  <path d="M 256 140
+           C 256 140, 280 180, 290 220
+           C 300 260, 310 300, 300 340
+           C 290 380, 270 400, 256 410
+           C 242 400, 222 380, 212 340
+           C 202 300, 212 260, 222 220
+           C 232 180, 256 140, 256 140 Z"
+        fill="url(#fireGradient)" />
+
+  <!-- Left flame -->
+  <path d="M 220 200
+           C 220 200, 200 230, 195 260
+           C 190 290, 195 320, 205 340
+           C 215 360, 230 370, 240 375
+           C 235 365, 225 350, 220 330
+           C 215 310, 215 280, 220 260
+           C 225 240, 220 200, 220 200 Z"
+        fill="url(#fireGradient)" opacity="0.8" />
+
+  <!-- Right flame -->
+  <path d="M 292 200
+           C 292 200, 312 230, 317 260
+           C 322 290, 317 320, 307 340
+           C 297 360, 282 370, 272 375
+           C 277 365, 287 350, 292 330
+           C 297 310, 297 280, 292 260
+           C 287 240, 292 200, 292 200 Z"
+        fill="url(#fireGradient)" opacity="0.8" />
+
+  <!-- Inner bright flame -->
+  <path d="M 256 180
+           C 256 180, 270 210, 275 240
+           C 280 270, 275 300, 265 320
+           C 255 340, 245 350, 256 360
+           C 267 350, 257 340, 247 320
+           C 237 300, 232 270, 237 240
+           C 242 210, 256 180, 256 180 Z"
+        fill="url(#innerFlame)" opacity="0.9" />
+
+  <!-- Small sparkle top left -->
+  <rect x="200" y="160" width="8" height="8" rx="2" ry="2" fill="#FFD700" opacity="0.8"/>
+
+  <!-- Small sparkle top right -->
+  <rect x="304" y="170" width="8" height="8" rx="2" ry="2" fill="#FFD700" opacity="0.8"/>
+
+  <!-- Small sparkle middle left -->
+  <rect x="210" y="250" width="6" height="6" rx="2" ry="2" fill="#FFA500" opacity="0.7"/>
+
+  <!-- Small sparkle middle right -->
+  <rect x="296" y="260" width="6" height="6" rx="2" ry="2" fill="#FFA500" opacity="0.7"/>
+</svg>
